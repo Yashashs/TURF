@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yearly Membership</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .membership-option {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+
+    .membership-option h2 {
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+
+    .membership-option p {
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #0056b3;
+    }
+
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .feature {
+        width: 33.33%;
+        padding: 20px;
+    }
+
+    .feature i {
+        font-size: 36px;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .feature p {
+        color: #555;
+        margin: 0;
+    }
+
+    .testimonial {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 40px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .testimonial p {
+        color: #555;
+        margin: 0;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #007bff;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Unlock Your Yearly Membership</h1>
+
+    <div class="membership-option">
+        <h2>Yearly Membership</h2>
+        <p>Get access to premium content for a year and explore all the features.</p>
+        <a href="yearlymem.html"> <button class="cta-button" onclick="joinMembership('yearly')">Join Now</button></a>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <i class="fas fa-video"></i>
+            <p>Exclusive video content</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-file-alt"></i>
+            <p>Downloadable resources</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-users"></i>
+            <p>Join a vibrant community</p>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"I've been a yearly member for years and I absolutely love it! The content is top-notch and the community is amazing."</p>
+        <p>- Yashas Sawai</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</div>
+
+<script>
+    function joinMembership(type) {
+        alert('You selected ' + type + ' membership. Redirecting to signup page...');
+        // Add logic to redirect to signup page
+    }
+</script>
+
+</body>
+</html>

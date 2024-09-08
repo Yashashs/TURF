@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.site-header h1 {
+    color: #0056b3;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    display:inline-block;;
+    animation: aboutus 4s linear 1s infinite alternate-reverse;
+}
+@keyframes aboutus{
+    from{
+        text-decoration:underline;
+    }
+    to{
+        text-decoration:underline;
+    }
+}
+ion-icon {
+    font-size: 45px;
+    color: #0056b3;
+    padding-left:10px;
+    padding-top:5px;
+}
+.info-section h2 {
+    color: #004494;
+    margin: 20px 0 10px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.info-section h2::after {
+    content: '';
+    width: 68px;
+    height: 4px;
+    background: #74ebd5;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+p, ul li {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px; 
+    height: 60px;
+    width: 1200px;
+    padding-left: 120px;
+    margin-left: 70px;
+    }
+    .navbar ul{
+    overflow: auto; /*this happens due to overflow from parent as we apply float*/
+    }
+    .navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;  
+    }
+    .navbar li a{
+    padding: 3px 11px;
+    text-decoration: none;
+    color: rgb(4, 0, 0);
+    font-size: 25px;
+    }
+    .navbar li a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    }
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    

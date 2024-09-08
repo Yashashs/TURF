@@ -1,0 +1,143 @@
+body{
+    background-color: rgba(0, 0, 0, 0.137);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* header{
+    padding: 50px;
+    background-color: red;
+    margin-left: 250px;
+}
+#check:checked ~ header{
+    margin-left: 250px;
+} */
+.button{
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(4, 4, 69);
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 22px;
+    text-align: center;
+    color: aliceblue;
+    line-height: 70px;
+    background-color: rgba(23, 49, 86, 0.882);
+    user-select: none;
+}
+.sidebar ul a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    line-height: 65px;
+    color: aliceblue;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+.sidebar ul li:hover a{
+    padding-left: 50px;
+}
+.sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: rgb(241, 241, 241);
+    padding: 6px 12px;
+    transition: all .5s;
+    border-radius: 20px;
+}
+label #cancel{
+    position: fixed;
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    border-radius: 20px;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;    
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+section{
+    background-color: rgb(7, 27, 95);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+footer{
+    text-align: center;
+    color: rgb(255, 250, 250);
+    background-color: #494949c5;
+    padding: 1em;
+}
+#check:checked ~ footer{
+    margin-left: 250px;
+}
+.Instagr{
+    display: block;
+    text-decoration: none;
+    display: block;
+    color: azure;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+}
+.foot ul a{
+    display: block;
+    text-decoration: none;
+    display: block;
+    color: azure;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+}
+.Instagr i{
+    margin-right: 16px;
+}

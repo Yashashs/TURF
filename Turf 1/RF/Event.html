@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 255, 0.274);
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .container:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h1,{
+            color:white
+        }
+        h2{
+            color: #333;
+        }
+        .event-link {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .event-link:hover {
+            background-color: #0056b3;
+        }
+        .navbar{
+            background-color: rgb(255, 255, 255);
+            border-radius: 30px; 
+            height: 60px;
+            width: 1200px;
+            padding-left: 120px;
+            margin-left: 70px;
+            }
+            .navbar ul{
+            overflow: auto; /*this happens due to overflow from parent as we apply float*/
+            }
+            .navbar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;  
+            }
+            .navbar li a{
+            padding: 3px 11px;
+            text-decoration: none;
+            color: rgb(4, 0, 0);
+            font-size: 25px;
+            }
+            .navbar li a:hover{
+            color: rgb(0, 0, 0);
+            border-bottom: 3px solid rgb(0, 0, 0);
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <div class="head">
+                <h1>Blogs</h1>
+            </div>
+            <nav class="navbar">
+                <ul>  
+                    <li><a href="Turf.html">Home</a></li> 
+                    <li><a href="newmembershippage.html">Membership</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="sport.html">Sports</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </center>
+        
+    </header>
+    <div class="container">
+        <h2>Events Held</h2>
+        <a href="event1.html" class="event-link">Event 1: Sport Science Conference</a>
+        <a href="event2maim.html" class="event-link">Event 2: Award Ceremony</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Event Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

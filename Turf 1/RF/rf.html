@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        form {
+            background-color: rgba(128, 128, 128, 0.14);
+            border: 1px solid black;
+            width: 350px;
+            height: 530px;
+            margin: 140px 20px 50px 70px; 
+            text-align: center;
+            font-size: 25px;
+            /* background-clip: content-box; */
+            padding: 10px 20px 80px;
+            /* box-shadow: 2px 2px 2px 2px purple; */
+            align-items: center;
+            text-align: center;
+        }
+        
+        body {
+            margin: 10px 10px 10px 600px;
+        }
+        
+        button {
+            color: white;
+            background-color: rgb(34, 122, 173);
+            width: 300px;
+            height: 30px;
+        }
+        
+        p {
+            font-size: 15px;
+        }
+        
+        .email,
+        .name,
+        .password {
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body style="margin-left: 470px;margin-right: 424px;">
+<center>
+    <form action="Index.php" method="post">
+        <tr>
+            <th>
+                <h2>Registration</h2>
+            </th>
+        </tr>
+        <hr>
+        <tr>
+            <td><input type="radio" name="Individual" value="personal">Personal </td>
+            <!-- <td><label for="personal">Personal</label></td> -->
+            &nbsp;&nbsp;
+            <td><input type="radio" name="Individual" value="company">Company </td>
+            <!-- <td><label for="personal">Company</label></td> -->
+        </tr>
+        <hr>
+        <tr>
+
+            <td><input class="email" type="email" name="Email" placeholder="Email" size="50"> </td>
+            <td><label for="Email"></label></td>
+            <br><br>
+
+            <td><input class="name" type="text" placeholder="Name" name="Name"> </td>
+            <td><label for="name"></label></td>
+            <br><br>
+            <td><input class="password" type="Password" placeholder="Password" name="Password"> </td>
+            <td><label for="password"></label></td>
+        </tr>
+        <br>
+        <hr>
+        <tr>
+            <td>
+                <td><input type="radio"  name="F">Male</td>
+                <!-- <td><label for="M">Male</label></td> -->
+                &nbsp;&nbsp;
+                <td><input type="radio" name="F">Female</td>
+                <!-- <td><label for="F">Female</label></td> -->
+            </td>
+        </tr><br>
+        <hr>
+        <tr>
+            <td>
+                <p>By clicking Register, you agree on our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+            </td>
+            <button>Submit</button>
+        </tr>
+
+
+    </form>
+</center>
+    
+</body>
+
+</html>

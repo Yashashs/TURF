@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership Options</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- <link rel="stylesheet" href="newmembershippage.css"> -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgba(0, 0, 255, 0.274);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    h1 {
+        color: #f3f0f0;
+    }
+
+    .membership-option {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .membership-option h2 {
+        color: #007bff;
+    }
+
+    .membership-option p {
+        color: #555;
+    }
+
+    .membership-option .cta-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .membership-option .cta-button:hover {
+        background-color: #0056b3;
+    }
+
+    .testimonial {
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .testimonial p {
+        margin: 0;
+    }
+
+    .faq {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .faq h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .faq ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .faq li {
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #007bff;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #0056b3;
+    }
+    .navbar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px; 
+    height: 60px;
+    width: 1200px;
+    padding-left: 120px;
+    margin-left: 70px;
+    }
+    .navbar ul{
+    overflow: auto; /*this happens due to overflow from parent as we apply float*/
+    }
+    .navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;  
+    }
+    .navbar li a{
+    padding: 3px 11px;
+    text-decoration: none;
+    color: rgb(4, 0, 0);
+    font-size: 25px;
+    }
+    .navbar li a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    }
+     header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        animation: fadeInDown 1s ease-out;
+    } 
+</style>
+</head>
+<body>
+    <header>
+        <center>
+            <div class="head">
+                <h1>Choose your Membership</h1>
+            </div>
+            <nav class="navbar">
+                <ul>  
+                    <li><a href="Turf.html">Home</a></li> 
+                    <li><a href="newmembershippage.html">Membership</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="sport.html">Sports</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </center>
+        
+    </header>
+<div class="container">
+
+    <div class="membership-option">
+        <i class="fas fa-calendar-week icon"></i>
+        <h2>Weekly Membership</h2>
+        <p>Get access for a week.</p>
+       <a href="mainmonthly.html" ><button class="cta-button" onclick="joinMembership('weekly')">Join Now</button></a>
+    </div>
+
+    <div class="membership-option">
+        <i class="far fa-calendar-alt icon"></i>
+        <h2>Monthly Membership</h2>
+        <p>Get access for a month.</p>
+       <a href="mainmonthly.html"> <button class="cta-button" onclick="joinMembership('monthly')">Join Now</button></a>
+    </div>
+
+    <div class="membership-option">
+        <i class="far fa-calendar icon"></i>
+        <h2>Yearly Membership</h2>
+        <p>Get access for a year.</p>
+        <a href="mainyearly.html"><button class="cta-button" onclick="joinMembership('yearly')">Join Now</button></a>
+    </div>
+
+    <div class="testimonial">
+        <p>"I've been a member for months and I absolutely love it! The content is top-notch and the community is amazing."</p>
+        <p>-DJ Aarjav</p>
+    </div>
+
+    <div class="faq">
+        <h3>Frequently Asked Questions</h3>
+        <ul>
+            <li><strong>Is there a free trial?</strong> Yes, we offer a 7-day free trial for all new members.</li>
+            <li><strong>Can I cancel my membership at any time?</strong> Yes, you can cancel your membership anytime without any penalty.</li>
+            <li><strong>Are there any additional fees?</strong> No, there are no hidden fees. The price you see is the price you pay.</li>
+        </ul>
+    </div>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</div>
+</body>
+<script>
+    function joinMembership(type) {
+        alert('You selected ' + type + ' membership. Redirecting to signup page...');
+    }
+</script>
+</html>

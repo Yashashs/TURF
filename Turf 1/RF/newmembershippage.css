@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.memberships {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.membership {
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.membership:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #333;
+}
+
+.join-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    margin-top: 50px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.icon-facebook:before {
+    content: "\f09a"; /* Unicode character for Facebook */
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: #3b5998;
+}
+
+.icon-instagram:before {
+    content: "\f16d"; /* Unicode character for Instagram */
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: #e4405f;
+}
+
+.icon-twitter:before {
+    content: "\f099"; /* Unicode character for Twitter */
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: #1da1f2;
+}
+
+.icon-google:before {
+    content: "\f1a0"; /* Unicode character for Google */
+    font-family: FontAwesome;
+    font-size: 30px;
+    color: #db4437;
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px; 
+    height: 60px;
+    width: 1200px;
+    padding-left: 120px;
+    margin-left: 70px;
+    }
+    .navbar ul{
+    overflow: auto; /*this happens due to overflow from parent as we apply float*/
+    }
+    .navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;  
+    }
+    .navbar li a{
+    padding: 3px 11px;
+    text-decoration: none;
+    color: rgb(4, 0, 0);
+    font-size: 25px;
+    }
+    .navbar li a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        animation: fadeInDown 1s ease-out;
+    }

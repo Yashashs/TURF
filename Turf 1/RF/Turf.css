@@ -1,0 +1,179 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.text-section {
+    max-width: 50%;
+}
+.title {
+    font-size: 4.5em;
+    margin-bottom: 30px;
+}
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.button {
+    background-color: #008000;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+}
+.navbar{
+background-color: rgb(255, 255, 255);
+border-radius: 30px; 
+height: 60px;
+width: 1200px;
+padding-left: 120px;
+margin-left: 70px;
+}
+.navbar ul{
+overflow: auto; /*this happens due to overflow from parent as we apply float*/
+}
+.navbar li{
+float: left;
+list-style: none;
+margin: 13px 20px;  
+}
+.navbar li a{
+padding: 3px 11px;
+text-decoration: none;
+color: rgb(4, 0, 0);
+font-size: 25px;
+}
+.navbar li a:hover{
+color: rgb(0, 0, 0);
+border-bottom: 3px solid rgb(0, 0, 0);
+}
+.search{
+float: right;
+padding: 13px 130px 13px 0px;
+color: rgb(233, 226, 226);
+
+}
+
+header{
+margin-top: 30px;
+}
+.head h1{
+text-align: center;
+margin-bottom: 30px;
+margin-top: 5px;
+}
+.foot ul a{
+display: block;
+text-decoration: none;
+color: azure;
+line-height: 30px;
+box-sizing: border-box;
+padding-left: 10px;
+height: 100%;
+width: 100%;
+}
+.Instagr i{
+margin-right: 16px;
+}
+.Instagr{
+display: block;
+text-decoration: none;
+color: azure;
+line-height: 30px;
+/* box-sizing: border-box; */
+padding-left: 10px;
+list-style: none;
+height: 100%;
+width: 100%;
+}
+footer{
+text-align: center;
+color: rgb(255, 250, 250);
+background-color: #000000c5;
+padding: 1em;
+height: 20px;
+
+}
+section{
+background-color: aqua;
+background-position: center;
+background-size: cover;
+height: 100vh;
+transition: all .5s;
+}
+ul{
+list-style: none;
+}
+.brands{
+margin-right: 66px;
+}
+
+.three{
+    display:flex;
+    background-color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search{
+    width:400px;
+    height:300px;
+    text-align:center;
+    
+    margin-top:10px;
+}
+.book{
+    width:400px;
+    height:300px;
+    margin-right:200px;
+    text-align:center;
+    margin-top:25px;
+}
+.play{
+    width:400px;
+    height:300px;
+    text-align:center;
+    margin-top:25px;
+
+}
+.sr,.bk,.py{
+    color:black;
+    font-weight:bold;
+    text-decoration: underline black;
+}
+    
+p{
+    font-size:20px;
+    font-weight:bold;
+    color:black;
+    margin-right:30px;
+}
+ion-icon{
+    font-size: 64px;
+    /* --ionicon-stroke-width: 16px; */
+    color: green;
+  }
+/* .head{
+    animation-name: head1;
+            animation-duration:3s;
+            animation-delay: 0;
+            animation-timing-function: ease-in;
+            animation-direction:reverse;
+} */
+@keyframes head1 {
+    from{
+        font-size:10px;
+    }
+    to{
+        font-size:20px;
+    }
+}

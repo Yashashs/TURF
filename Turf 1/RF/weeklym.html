@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Membership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .membership-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            animation: fadeInUp 1s ease;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #007bff;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Weekly Membership</h1>
+    <div class="membership-form">
+        <form id="weeklyMembershipForm" onsubmit="return validateForm()" action="Turf.html">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" name="expiry" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <label for="weeks">Access Duration (Weeks):</label>
+                <input type="number" id="weeks" name="weeks" min="1" max="12" required>
+            </div>
+            <a href="Turf.html"> <button type="submit">Join Now</button></a>
+            
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var cardNumber = document.getElementById("cardNumber").value;
+        var expiry = document.getElementById("expiry").value;
+        var cvv = document.getElementById("cvv").value;
+        var weeks = document.getElementById("weeks").value;
+
+        if (name.trim() === "" || email.trim() === "" || phone.trim() === "" ||
+            cardNumber.trim() === "" || expiry.trim() === "" || cvv.trim() === "" || weeks.trim() === "") {
+            alert("Please fill out all fields.");
+            return false;
+        }
+
+        alert("Thank you for joining our weekly membership for " + weeks + " weeks!");
+        return true;
+    }
+    const express = require('express');
+const mysql = require('mysql');
+const bodyParser = require('body-parser');
+
+const app = express();
+const port = 3000;
+
+// Create MySQL connection
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'your_mysql_username',
+    password: 'your_mysql_password',
+    database: 'your_database_name'
+});
+
+// Connect to MySQL
+db.connect((err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('MySQL connected');
+});
+
+// Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// Handle form submission
+app.post('/submit_membership', (req, res) => {
+    const { name, email, phone, cardNumber, expiry, cvv, weeks } = req.body;
+
+    // Insert data into MySQL
+    const sql = `INSERT INTO membership (name, email, phone, cardNumber, expiry, cvv, weeks) VALUES (?, ?, ?, ?, ?, ?, ?)`;
+    db.query(sql, [name, email, phone, cardNumber, expiry, cvv, weeks], (err, result) => {
+        if (err) {
+            res.status(500).send('Error joining membership');
+            throw err;
+        }
+        console.log('Membership joined:', result);
+        res.status(200).redirect('thankyoulastmwm.html');
+    });
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+});
+
+</script>
+
+</body>
+</html>

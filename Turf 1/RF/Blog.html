@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog - Turf Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 255, 0.274);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* To prevent horizontal scroll */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+        .blog-post {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideInLeft 1s ease-out;
+            transition: transform 0.3s;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+        .blog-post h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .blog-post p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .blog-post a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            /* position: fixed; */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .navbar{
+background-color: rgb(255, 255, 255);
+border-radius: 30px; 
+height: 60px;
+width: 1200px;
+padding-left: 120px;
+margin-left: 70px;
+}
+.navbar ul{
+overflow: auto; /*this happens due to overflow from parent as we apply float*/
+}
+.navbar li{
+float: left;
+list-style: none;
+margin: 13px 20px;  
+}
+.navbar li a{
+padding: 3px 11px;
+text-decoration: none;
+color: rgb(4, 0, 0);
+font-size: 25px;
+}
+.navbar li a:hover{
+color: rgb(0, 0, 0);
+border-bottom: 3px solid rgb(0, 0, 0);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <div class="head">
+                <h1>Blogs</h1>
+            </div>
+            <nav class="navbar">
+                <ul>  
+                    <li><a href="Turf.html">Home</a></li> 
+                    <li><a href="newmembershippage.html">Membership</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="sport.html">Sports</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </center>
+        
+    </header>
+    <div class="blog-post">
+        <h2>Blog Post Title 1</h2>
+        <p>This is the content of the first blog post.</p>
+        <a href="Blog1.html">Read More</a>
+    </div>
+    <div class="blog-post">
+        <h2>Blog Post Title 2</h2>
+        <p>This is the content of the second blog post.</p>
+        <a href="Blog2.html">Read More</a>
+    </div>
+    <div class="blog-post">
+        <h2>Blog Post Title 3</h2>
+        <p>This is the content of the third blog post.</p>
+        <a href="Blog3.html">Read More</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Turf Website. All rights reserved.</p>
+    </div>
+</body>
+</html>

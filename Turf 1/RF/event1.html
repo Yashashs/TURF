@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Science Conference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0074D9;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            animation: headerAnimation 1s ease-in-out infinite alternate;
+        }
+        @keyframes headerAnimation {
+            0% { transform: translateY(-10px); }
+            100% { transform: translateY(10px); }
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: containerAnimation 1s ease-in-out;
+        }
+        @keyframes containerAnimation {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #333;
+        }
+        .block {
+            margin-bottom: 40px;
+            animation: blockAnimation 1s ease-in-out;
+        }
+        @keyframes blockAnimation {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: imageAnimation 1s ease-in-out;
+        }
+        @keyframes imageAnimation {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sport Science Conference</h1>
+    </header>
+    <div class="container">
+        <div class="block">
+            <h3>Presentations and Talks</h3>
+            <p>Researchers present their findings on topics like exercise physiology, biomechanics, and nutrition.</p>
+            <img src="pandt.jpeg" alt="Presentation" width="300px" height="300px">
+        </div>
+        <div class="block">
+            <h3>Workshops</h3>
+            <p>Hands-on sessions cover practical skills relevant to sports science.</p>
+            <img src="workshops.jpeg" alt="Workshop" width="300px" height="300px">
+        </div>
+        <div class="block">
+            <h3>Networking Opportunities</h3>
+            <p>Attendees connect with peers and industry professionals.</p>
+            <img src="network.png" alt="Networking" width="270px" height="300px">
+        </div>
+        <div class="block">
+            <h3>Exhibitions</h3>
+            <p>Companies display sports-related products and innovations.</p>
+            <img src="exh.jpeg" alt="Exhibition" width="300px" height="300px">
+        </div>
+    </div>
+</body>
+</html>

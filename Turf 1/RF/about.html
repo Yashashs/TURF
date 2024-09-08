@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Turf Booking Area</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header">
+        <center>
+            <div class="head">
+                <h1>About</h1>
+            </div>
+            <nav class="navbar">
+                <ul>  
+                    <li><a href="Turf.html">Home</a></li> 
+                    <li><a href="newmembershippage.html">Membership</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="sport.html">Sports</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </center>
+    </header>
+    <div class="container"> 
+        <header class="site-header">
+            <h1>About Us</h1>
+            <ion-icon name="bookmarks-outline"></ion-icon>
+        </header>
+        <main>
+            <section class="info-section" id="mission">
+                <h2>Our Mission</h2>
+                <p>At Turf Booking Area, our mission is to provide a convenient platform for booking turf facilities for sports enthusiasts and communities. We strive to make the process of finding and reserving turf spaces seamless and enjoyable.</p>
+            </section>
+            
+            <section class="info-section" id="vision">
+                <h2>Our Vision</h2>
+                <p>We envision a world where access to high-quality turf facilities is easy and accessible to everyone. By leveraging technology, we aim to empower individuals and groups to engage in sports and recreational activities conveniently.</p>
+            </section>
+            
+            <section class="info-section" id="choose-us">
+                <h2>Why Choose Us?</h2>
+                <p>There are several reasons to choose Turf Booking Area for your turf reservation needs:</p>
+                <ul>
+                    <li>Easy-to-use platform for finding and booking turf facilities</li>
+                    <li>Wide selection of turf spaces available for various sports and activities</li>
+                    <li>Transparent pricing and secure payment processing</li>
+                    <li>Dedicated customer support team to assist you with any inquiries or issues</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Turf Booking Area</p>
+        </footer>
+    </div>
+    
+</body>
+<script>
+// Wait for the DOM to fully load
+document.addEventListener("DOMContentLoaded", () => {
+    // Options for the observer (viewport and thresholds)
+    const options = {
+        root: null, // sets the frame to the viewport
+        threshold: 0, // threshold of 0 means as soon as even one pixel is visible, the callback will run
+        rootMargin: "0px 0px -100px 0px" // margin around the root. Values are similar to those for the CSS margin property
+    };
+
+    // Callback function to run when intersection is observed
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            // If element is in viewport, add the animate class; otherwise, remove it (optional)
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+            } else {
+                entry.target.classList.remove("animate");
+            }
+        });
+    };
+
+    // Creating an observer with the above options and callback
+    const observer = new IntersectionObserver(callback, options);
+
+    // Targeting all sections to
+});
+
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

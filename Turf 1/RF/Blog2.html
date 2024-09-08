@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Blog Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .blog-post {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease-out;
+        }
+        .blog-post h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .blog-post p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Simple Blog</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section class="blog-post">
+            <article>
+                <h2>Turf Explore</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus mauris. Nam vel libero consectetur, blandit purus eget, vehicula enim. Integer auctor nisl sit amet risus sodales, vitae maximus ligula venenatis. Aliquam nec felis eu magna imperdiet viverra. Donec sed sapien et lectus tincidunt vestibulum. Duis auctor enim id odio euismod, sed vestibulum felis consectetur. In vehicula feugiat ligula, nec euismod nisl mollis nec. Aliquam id posuere justo, eu bibendum enim. Duis a consequat nulla, non rutrum lacus. Nam vehicula dolor nec est interdum, eget lobortis lacus malesuada. Ut id efficitur ligula.</p>
+                <center><img src="Turfvisit.jpg" alt="Turf Visit"></center>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus mauris. Nam vel libero consectetur, blandit purus eget, vehicula enim. Integer auctor nisl sit amet risus sodales, vitae maximus ligula venenatis. Aliquam nec felis eu magna imperdiet viverra. Donec sed sapien et lectus tincidunt vestibulum. Duis auctor enim id odio euismod, sed vestibulum felis consectetur. In vehicula feugiat ligula, nec euismod nisl mollis nec. Aliquam id posuere justo, eu bibendum enim. Duis a consequat nulla, non rutrum lacus. Nam vehicula dolor nec est interdum, eget lobortis lacus malesuada. Ut id efficitur ligula.</p>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Simple Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

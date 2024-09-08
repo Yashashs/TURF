@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #0074D9;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            animation: headerAnimation 1s ease-in-out infinite alternate;
+        }
+        @keyframes headerAnimation {
+            0% { transform: translateY(-5px); }
+            100% { transform: translateY(5px); }
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: containerAnimation 1s ease-in-out;
+        }
+        @keyframes containerAnimation {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            animation: headingAnimation 1s ease-in-out;
+        }
+        @keyframes headingAnimation {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .award {
+            font-weight: bold;
+        }
+        .block {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            animation: blockAnimation 1s ease-in-out;
+        }
+        @keyframes blockAnimation {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .block img {
+            max-width: 100px;
+            margin-right: 1rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sports Awards</h1>
+    </div>
+    <div class="container">
+        <h2>National Sports Awards</h2>
+        <ul>
+            <li class="block">
+                <img src="kehlaward.jpg" alt="Khel Ratna Award">
+                <span class="award">Khel Ratna Award:</span> Recognizes exceptional performances in sports over a four-year period.
+            </li>
+            <li class="block">
+                <img src="arjunaaward.jpg" alt="Arjuna Award">
+                <span class="award">Arjuna Award:</span> Given for consistent excellence over four years.
+            </li>
+            <li class="block">
+                <img src="Dronacharya_Award.jpg" alt="Dronacharya Award">
+                <span class="award">Dronacharya Award:</span> Recognizes coaches producing medal-winning athletes at international events.
+            </li>
+            <li class="block">
+                <img src="dhyanaward.jpg" alt="Dhyan Chand Award">
+                <span class="award">Dhyan Chand Award:</span> Honors individuals contributing significantly to sports promotion.
+            </li>
+            <li class="block">
+                <img src="maulaaward.jpg" alt="Maulana Abul Kalam Azad Trophy">
+                <span class="award">Maulana Abul Kalam Azad Trophy:</span> Recognizes top performances in inter-university tournaments
+            </li>
+            <li class="block">
+                <img src="rashaward.webp" alt="Rashtriya Khel Protsahan Puruskar">
+                <span class="award">Rashtriya Khel Protsahan Puruskar:</span> Acknowledges entities promoting sports development over three years. Includes organizations, schools, and individuals. Encourages sports initiatives.
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+            background-color: rgba(0, 0, 255, 0.274);
+        }
+
+        header {
+            background-color: #000000a2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            animation: slideIn 1s ease-in-out;
+        
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-info, .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .contact-info h2, .contact-form h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li{
+            margin-bottom: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #000000b7;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            /* position: fixed; */
+            bottom: 0;
+            width: 100%;
+        }
+        .navbar{
+background-color: rgb(255, 255, 255);
+border-radius: 30px; 
+height: 60px;
+width: 1200px;
+padding-left: 120px;
+margin-left: 70px;
+}
+.navbar ul{
+overflow: auto; /*this happens due to overflow from parent as we apply float*/
+}
+.navbar li{
+float: left;
+list-style: none;
+margin: 13px 20px;  
+}
+.navbar li a{
+padding: 9px 5px;
+text-decoration: none;
+color: rgb(4, 0, 0);
+font-size: 25px;
+}
+.navbar li a:hover{
+color: rgb(0, 0, 0);
+border-bottom: 3px solid rgb(0, 0, 0);
+}
+.contact-form{
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <div class="head">
+                <h1>Contact us</h1>
+            </div>
+            <nav class="navbar">
+                <ul>  
+                    <li><a href="Turf.html">Home</a></li> 
+                    <li><a href="newmembershippage.html">Membership</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="sport.html">Sports</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </center>
+        
+    </header>
+
+    <div class="container">
+        <section class="contact-info">
+            <h2>Our Organization</h2>
+            <p>Welcome to Our Organization. We are dedicated to serving you.</p>
+            <p>Contact us through any of the following methods:</p>
+            <ul>
+                <li>Email: Begin@gmail.com</li>
+                <li>Phone: +91 7456234267 , +91 9823456145</li>
+                <li>Address: Bandra Road,Mumbai,India</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send us a message</h2>
+            <form onsubmit="submitForm(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Our Organization. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitForm(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you shortly.');
+            e.target.reset(); // Reset form after submission
+        }
+    </script>
+</body>
+</html>
